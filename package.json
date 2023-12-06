@@ -1,6 +1,7 @@
 {
   "name": "codespaces-react",
   "version": "0.1.0",
+  "homepage":"https://brallium.github.io/Brallium/Brallium",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -31,6 +32,8 @@
     "postcss": "^8.4.31"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy":"gh-pages -d build",
     "start": "react-scripts start",
     "backend": "node server.js",
     "build": "react-scripts build",
